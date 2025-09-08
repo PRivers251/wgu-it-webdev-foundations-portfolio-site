@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Story_Script;
+    src: url(../assets/fonts/Story_Script/StoryScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cossette_Titre;
+    src: url(../assets/fonts/Cossette_Titre/CossetteTitre-Regular.ttf);
+}
+
+:root {
+    --font-brand-logo: Cossette_Titre;
+    --font-title: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-text: Arial, Helvetica, sans-serif;
+    --font-primary-color: black;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: var(--font-text)
+}
+
+main {
+    margin-inline: 3rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-primary-color);
+    display: inline-block;
+}
+
+.test-div {
+    border: 1px dotted black;
+}
+
+.navbar {
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    margin-inline: auto;
+    width: 40rem;
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-menu-item {
+    height: inherit;
+}
+
+.nav-menu-item a:hover {
+   background-color: white;
+   border: none;
+}
+
+.logo-brand {
+    font-family: var(--font-brand-logo);
+    font-weight: bolder;
+    padding: 0;
+    margin-block: auto;
+}
+
+.contact-info-container {
+    width: fit-content;
+}
+
+.contact-info-container strong {
+    text-decoration: underline;
+    display:block;
+}
+
+.contact-group {
+    margin-block: 1rem;
+}
+
+.contact-group a:hover {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .2em;
+    color: white;
+    background: black;
+}

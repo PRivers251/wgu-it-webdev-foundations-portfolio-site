@@ -13,16 +13,19 @@
     --font-title: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --font-text: Arial, Helvetica, sans-serif;
     --font-primary-color: black;
+
+    --primary-color: rgb(1, 1, 38);
 }
 
 body {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-text);
     margin: 0;
 }
 
 main {
     margin-inline: 3rem;
+    margin-top: 5rem;
 }
 
 h1, h2, h3 {
@@ -55,7 +58,7 @@ nav {
     width: 100%;
     margin: auto;
     align-items: center;
-    background-color: rgb(1, 1, 79);
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -77,6 +80,7 @@ nav {
     align-items: center;
     padding-inline: 2.5rem;
     border-inline: 1px solid white;
+    cursor: pointer;
 }
 
 .nav-menu-item:hover {
@@ -98,6 +102,7 @@ nav {
     font-weight: bolder;
     padding: 0;
     margin-block: auto;
+    font-size: 3.5em;
 }
 
 .contact-info-container {
@@ -105,13 +110,14 @@ nav {
     display: flex;
     justify-content: space-around;
     padding-inline: 2rem;
-    align-items: center;
+    align-items: top;
     margin: auto;
 }
 
 .contact-info-container strong {
     text-decoration: underline;
     display:block;
+    color: var(--primary-color)
 }
 
 .contact-group {
@@ -123,5 +129,54 @@ nav {
     border-radius: 4px;
     padding: .2em;
     color: white;
-    background: black;
+    background: var(--primary-color);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.professional-summary {
+    width: 50%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 30px;
+
+    border-image: linear-gradient(
+    to bottom right,
+    black,
+    transparent
+  ) 1;
+}
+
+.professional-summary h2 {
+    text-align: center;
+}
+
+.professional-summary p {
+    padding-inline: 3rem;
+    line-height: 32px;
+}
+
+.profile-image {
+    width: 30rem;
+}
+
+.certifications {
+    margin-top: 5rem;
+}
+
+.certifications h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cert-image-container {
+    width: 50%;
+}
+
+.cert-image {
+    border-radius: 5px;
+    margin-inline: auto;
 }

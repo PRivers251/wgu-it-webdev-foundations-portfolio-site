@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css"/>
-    <script href="../scripts/scripts.js" defer></script>
+    
     <title>Resume</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 
         <ul class="nav-menu ">
             <li class="nav-menu-item ">
-                <a href="#">Resume</a>
+                <a href="./resume.html">Resume</a>
             </li>
 
             <li class="nav-menu-item ">
@@ -25,28 +25,29 @@
                 <a href="./career-goals.html">Career Goals</a>
             </li>
         </ul>
+        <div id="date-space"></div>
     </nav>
     <div class="contact-info-container ">
             <div class="contact-group">
-                <strong>Email:</strong>
+                <strong>Email</strong>
                 <a href="mailto:privers251@gmail.com">PRivers251@gmail.com</a>
             </div>
                 <div class="contact-group">
-                <strong>Phone:</strong>
+                <strong>Phone</strong>
                 <a href="tel:251-472-6693">251-472-6693</a>
             </div>
             <div class="contact-group">
-                <strong>Location:</strong>
+                <strong>Location</strong>
                 <p>Mobile, AL</p>
             </div>
         </div>
     <main>
         <section class="intro">
             <div class="professional-summary">
-                <h2>Professional Summary</h2>
-                <p>
-                    Certified IT & Network Professional (CCNA, CompTIA Security+, A+, Project+, ITIL v4) with hands-on expertise in network monitoring, troubleshooting, and configuration in enterprise settings. Skilled in Cisco device management, routing protocols (OSPF, BGP), VLANs, Layer 2/3 switching, with extensive experience in NOC and enterprise support environments. Proficient in supporting users and devices utilizing Windows Server, Active Directory, Intune, and Entra ID. Experienced in premise cabling, VoIP, and IT project management, ensuring compliance and operational efficiency. Adept at using Wireshark, SolarWinds, GNS3, and VMware for troubleshooting and producing simulated enterprise environments.
-                </p>
+                <h2>Introduction</h2>
+                <article>
+                    Hello! My name is Patrick Rivers. I am a certified IT & Network Professional (CCNA, CompTIA Security+, A+, Project+, ITIL v4) with hands-on expertise in network monitoring, troubleshooting, and configuration in enterprise settings. I am skilled in Cisco device management, routing protocols (OSPF, BGP), VLANs, Layer 2/3 switching, with extensive experience in service provider NOC and enterprise support environments. I am proficient in supporting users and devices utilizing Windows Server, Active Directory, Intune, and Entra ID. Experienced in premise cabling, VoIP, and IT project management, ensuring compliance and operational efficiency. Adept at using Wireshark, SolarWinds, GNS3, and VMware for troubleshooting and producing simulated enterprise environments.
+                </article>
             </div>
 
             <div class="profile-image-container">
@@ -56,17 +57,113 @@
             </div>
         </section>
 
-        <section class="certifications">
+        <section class="certifications-section section-spacing">
 
-            <h2>Certifications</h2>
-            <div class="cert-image-container">
-                <img class="cert-image" src="../assets/images/cert-image.png" alt="">
-            </div>
-
-            <div class="cert-list">
-
+            <h2 class="section-header">My Certifications</h2>
+            <div class="cert-content-container">
+                <div class="cert-image-container">
+                    <img class="cert-image" src="../assets/images/cert-image.png" alt="">
+                </div>
+                
+                <div class="cert-list">
+                    <ul>
+                        <li><span>CCNA (Cisco Certified Network Associate)</span> <p>Febuary 2024</p> </li>
+                        <li><span>CompTIA Security+</span> <p>January 2025</p></li>
+                        <li><span>CompTIA A+</span> <p>October 2024</p></li>
+                        <li><span>CompTIA Project+</span> <p>Febuary 2025</p></li>
+                        <li><span>ITIL</span> <p>April 2024</p></li>
+                    </ul>
+                </div>
             </div>
         </section>
+        <hr/>
+        <section class="education-section section-spacing">
+            <h2 class="section-header">Education</h2>
+            <div class="education-content-container">
+                <span>B.S. Information Technology</span> <p>Western Governors University</p> <p>April 2024 - April 2026</p>
+            </div>
+        </section>
+        <hr/>
+
+        <section class="experience-section">
+            <h2 class="section-header">Experience</h2>
+            <table>
+                <caption>My Previous Experience</caption>
+                <th>
+                    Position
+                </th>
+                <th>
+                    Company
+                </th>
+                <th>
+                    Start Date MM/YYYY
+                </th>
+                <th>
+                    End Date MM/YYYY
+                </th>
+
+                <tr>
+                    <td>
+                        Communicaitons Tech III
+                    </td>
+                    <td>
+                        Baldwin County Commission
+                    </td>
+                    <td>
+                        04/2025
+                    </td>
+                    <td>
+                        Present
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Field IT Technician
+                    </td>
+                    <td>
+                        Field Nation
+                    </td>
+                    <td>
+                        10/2023
+                    </td>
+                    <td>
+                        04/2025
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        NOC Technician
+                    </td>
+                    <td>
+                        Uniti Fiber
+                    </td>
+                    <td>
+                        01/2024
+                    </td>
+                    <td>
+                        04/2024
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Chemical Production & Transporation
+                    </td>
+                    <td>
+                        Olin Chemical, Nexeo Solutions, Heniff Trans
+                    </td>
+                    <td>
+                        01/2013
+                    </td>
+                    <td>
+                        10/2023
+                    </td>
+                </tr>
+            </table>
+        </section>
     </main>
+    <script href="../scripts/scripts.js"></script>
 </body>
 </html>

@@ -17,6 +17,10 @@
     --primary-color: rgb(1, 1, 38);
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 1.2rem;
     font-family: var(--font-text);
@@ -24,7 +28,7 @@ body {
 }
 
 main {
-    margin-inline: 3rem;
+    padding-inline: 3rem;
     margin-top: 5rem;
 }
 
@@ -63,27 +67,25 @@ caption {
 }
 
 .navbar {
-    padding-inline: 2rem;
     display: flex;
     justify-content: space-between;
     height: 5rem;
-    width: 100%;
-    margin: auto;
     align-items: center;
     background-color: var(--primary-color);
     color: white;
+    width: 100%;
+    padding-inline: 2rem;
 }
 
 .nav-menu {
     display: flex;
-    margin-inline: auto;
-    width: 40rem;
     padding: 0;
     justify-content: center;
     list-style-type: none;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 30rem;
 }
 
 .nav-menu-item {
@@ -136,7 +138,6 @@ caption {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding-inline: 2rem;
     align-items: top;
     margin: auto;
 }
@@ -269,6 +270,7 @@ caption {
 
 .experience-section {
     min-height: 15rem;
+    margin-bottom: 3rem;
 }
 
 .experience-section table {
@@ -285,4 +287,29 @@ caption {
 .experience-section td {
     padding-block: 0.5rem;
     border-bottom: 1px solid black;
+}
+
+.footer {
+    height: 5rem;
+    background-color: var(--primary-color);
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > * {
+    margin-block: 0.5rem;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.cover-letter-section article {
+    width: 60%;
+    margin-inline: auto;
+    margin-block: 3rem;
 }

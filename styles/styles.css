@@ -37,6 +37,10 @@ h1, h2, h3 {
     color: var(--primary-color)
 }
 
+h3 {
+    margin-block: 1rem;;
+}
+
 p {
     margin: 0;
 }
@@ -61,6 +65,14 @@ caption {
     margin-bottom: 2rem;
     font-weight: bold;
 }
+
+article {
+    width: 60%;
+    margin-inline: auto;
+    margin-block: 2rem;
+    line-height: 1.7rem;
+}
+
 
 .test-div {
     border: 1px dotted black;
@@ -94,6 +106,8 @@ caption {
     align-items: center;
     border-inline: 1px solid white;
     cursor: pointer;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-menu-item:hover {
@@ -308,8 +322,15 @@ caption {
     color: inherit;
 }
 
-.cover-letter-section article {
-    width: 60%;
-    margin-inline: auto;
-    margin-block: 3rem;
+.cover-letter-section p {
+    margin-bottom: 1.5rem;
+}
+
+.career-goals-section ul {
+    margin-block: 1rem;
+    flex-direction: column;
+}
+
+.career-goals-section li {
+    display: block;
 }

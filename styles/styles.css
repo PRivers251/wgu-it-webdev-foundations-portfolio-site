@@ -73,6 +73,72 @@ article {
     line-height: 1.7rem;
 }
 
+form {
+    width: 50%;
+    margin-inline: auto;
+    margin-block: 3rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+input, textarea {
+    width: 75%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+fieldset {
+    width: 75%;
+    margin-inline: auto;
+    border-radius: 5px;
+}
+
+legend {
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.form-group button {
+    font-size: 1.1rem;
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.form-group.radio {
+    justify-content: center;
+}
+
+.form-group.radio input {
+    width: fit-content
+}
+
+.form-group.radio label {
+    padding-inline: 1rem;
+}
+
+.form-group.select {
+    width: 75%;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.form-group.select select {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+}
 
 .test-div {
     border: 1px dotted black;
